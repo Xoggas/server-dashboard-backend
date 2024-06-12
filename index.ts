@@ -1,13 +1,9 @@
 import express from 'express';
+import MainRouter from './src/core/MainRouter';
 
 const app = express();
+const port = 3000 || process.env.PORT;
 
-const PORT: Number = 3000;
-
-app.get('/', (req, res) => {
-  res.send('Welcome to typescript backend!');
-});
-
-app.listen(PORT, () => {
-  console.log(`The application is listening on port http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`The application is listening on port http://localhost:${port}`);
 });

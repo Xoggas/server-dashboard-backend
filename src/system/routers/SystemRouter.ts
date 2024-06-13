@@ -10,4 +10,6 @@ router.get('/get-all-stats', systemController.getAllStats);
 
 router.post('/reboot', systemController.reboot);
 
+router.post('/shutdown', systemController.shutdown);
+
 export default router;

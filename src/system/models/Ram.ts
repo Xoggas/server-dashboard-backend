@@ -1,11 +1,13 @@
-export class Ram {
-  public readonly total: Number;
-  public readonly used: Number;
-  public readonly free: Number;
+import { Size } from "./Size";
 
-  constructor(total: Number, used: Number, free: Number) {
-    this.total = total;
-    this.used = used;
-    this.free = free;
+export class Ram {
+  public readonly total: Size;
+  public readonly used: Size;
+  public readonly free: Size;
+
+  constructor(total: number, used: number, free: number) {
+    this.total = new Size(total);
+    this.used = new Size(used);
+    this.free = new Size(free);
   }
 }

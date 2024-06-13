@@ -1,9 +1,9 @@
 export class Cpu {
-  public readonly cores: Number;
-  public readonly load: Number;
+  public readonly load: number;
+  public readonly temperature: number;
 
-  constructor(cores: Number, load: Number) {
-    this.cores = cores;
+  constructor(load: number, temperature: number) {
     this.load = load;
+    this.temperature = temperature;
   }
 }

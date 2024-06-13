@@ -1,6 +1,7 @@
 import { System } from "../models/System";
 
 export interface ISystemService {
-  getAllStats(): System;
-  reboot(): void;
+  getAllStats(): Promise<System>;
+  reboot(): Promise<void>;
+  shutdown(): Promise<void>;
 }
